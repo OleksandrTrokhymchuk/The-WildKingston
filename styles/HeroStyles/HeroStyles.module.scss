@@ -1,0 +1,168 @@
+@import "../AdditionalStyles/Mixins/mixins.scss";
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    @media (max-width: $tablet) {
+        align-items: start;
+    }
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    flex-grow: 1;
+    padding-top: clamp(4.375rem, 3.063rem + 6.56vw, 9.5rem) !important;
+    padding-bottom: 50px !important;
+    @media (max-width: $tablet) {
+        justify-content: center;
+    }
+}
+
+.hero__content {
+    max-width: clamp(31.25rem, 14.254rem + 26.56vw, 40.313rem);
+    position: absolute;
+    z-index: 2;
+    @media (max-width: $tablet) {
+        top: 17%;
+        text-align: center;
+        max-width: 85%;
+    }
+}
+
+.hero__title {
+    font-family: $fontFamilySecond;
+    font-size: clamp(2.5rem, 1.54rem + 4.8vw, 6.25rem);
+    text-transform: capitalize;
+    color: $backgroundGold;
+    &:not(:last-child) {
+        margin-bottom: clamp(1.25rem, 0.738rem + 2.56vw, 3.25rem);
+    }
+}
+
+// .hero-slider {
+//     padding-top: 50px;
+//     padding-bottom: 50px;
+//     margin-top: 60px;
+
+//     @media (max-width: $tablet) {
+//         margin-top: 0%;
+//         transform: translateY(30%);
+//     }
+//     @media (max-width: $mobile) {
+//         margin-top: 10%;
+//     }
+//     @media (max-width: $mobileSmall) {
+//         margin-top: 20%;
+//     }
+    
+//     :global(.swiper-slide) {
+//         transition: transform 1s ease, opacity 1s ease !important;
+//         transform: translateX(-40%) scale(0.17) !important;
+//         will-change: transform, opacity; 
+//     }
+    
+//     :global(.swiper-slide-active) {
+//         transform: scale(1) !important;
+//         will-change: transform;
+//     }
+    
+//     :global(.swiper-slide-prev) {
+//         opacity: 0;
+//     }
+    
+//     :global(.swiper-slide-next) {
+//         opacity: 0.7;
+//         transform: translateX(-40%) scale(0.17) !important;
+//         will-change: transform, opacity; 
+//     }
+    
+// }
+
+// .hero__slide {
+//     margin-top: clamp(0.313rem, -0.271rem + 2.92vw, 2.5rem);
+//     aspect-ratio: 1 / 1;
+//     max-width: clamp(15.625rem, 7.625rem + 40vw, 46.875rem) !important;
+//     border: 1px solid $backgroundGold;
+//     padding: clamp(0.875rem, 0.715rem + 0.8vw, 1.5rem);
+//     border-radius: 50%;
+//     position: relative;
+// }
+
+// .slide-hero__body {
+//     background: linear-gradient(
+//         135deg,
+//         rgba(20, 17, 10, 1) 0%,
+//         rgba(33, 28, 22, 1) 12%,
+//         rgba(20, 17, 10, 1) 100%
+//     );
+//     overflow: hidden;
+//     aspect-ratio: 1 / 1;
+//     border-radius: 50%;
+//     transition: transform 0.5s ease, width 1.5s ease;
+// }
+
+
+// .slide-hero__image {
+//     max-width: 100%;
+//     margin-top: -15%;
+// }
+
+// .slide-hero__top-image {
+//     width: 100%;
+//     height: 50%;
+//     overflow: hidden;
+//     aspect-ratio: 1 / 1;
+//     margin-top: -115%;
+//     opacity: 1;
+//     img {
+//         max-width: 100%;
+//     }
+// }
+
+// .hero-slider__navigation-buttons {
+//     display: flex;
+//     align-items: center;
+//     position: absolute;
+//     bottom: clamp(3.125rem, -7.572rem + 17.27vw, 9.375rem);
+//     right: 15px;
+//     z-index: 50;
+//     gap: 0 25px;
+//     @media (max-width: $tablet) {
+//         bottom: -10%;
+//     }
+//     @media (max-width: $mobile) {
+//         bottom: -15%;
+//         right: auto;
+//         left: auto;
+//     }
+//     button {
+//         background: transparent;
+//         & svg {
+//             transition: opacity 0.5s ease;
+//             @media (any-hover: hover) {
+//                 &:hover {
+//                     opacity: 0.7;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .hero__arrow--left svg{
+//     transform: scaleX(-1);
+// }
+
+.hero__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+}

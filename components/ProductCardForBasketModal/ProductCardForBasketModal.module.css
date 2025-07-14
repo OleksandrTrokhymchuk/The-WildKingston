@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+.input[type=number]::-webkit-outer-spin-button,
+.input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.label {
+  display: flex;
+  gap: 0 10px;
+  align-items: center;
+}
+
+.input {
+  text-align: center;
+  border: 1px solid #9d875c;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  color: #222220;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 3px;
+}
+.input:focus {
+  background-color: rgb(255, 251, 242);
+}
+
+.input__button {
+  background: transparent;
+  font-size: 30px;
+  color: #9d875c;
+  transition: all 0.5s ease;
+}
+@media (any-hover: hover) {
+  .input__button:hover {
+    transform: scale(1.5);
+  }
+}
+.input__button:active {
+  transform: scale(1.85);
+}
+.input__button--decrease {
+  margin-top: -4px;
+}
+@media (any-hover: hover) {
+  .input__button--decrease:hover {
+    margin-top: -6px;
+  }
+}
+.input__button--remove {
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.input__button--remove svg {
+  transition: all 0.5s ease;
+}
+.input__button--remove svg path {
+  fill: #9d875c;
+  transition: all 0.5s ease;
+}
+@media (any-hover: hover) {
+  .input__button--remove svg:hover {
+    transform: scale(1.2) rotate(10deg);
+  }
+  .input__button--remove svg:hover path {
+    fill: #cb2525;
+  }
+}
+
+.button-add {
+  padding: 6px 24px;
+  border: none;
+  border-radius: 30px;
+  background-color: #9c836e;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, padding 0.3s ease;
+}
+.button-add:hover {
+  background-color: #826c58;
+  transform: translateY(-2px);
+}
+.button-add:active {
+  transform: translateY(0);
+}
+
+.item-product__image-ibg-contain {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-product__image-ibg-contain img {
+  border: 1px solid #c1ab81;
+  border-radius: 15%;
+  width: 200px;
+  padding: 20px;
+  aspect-ratio: 1;
+  filter: drop-shadow(10px 10px 10px rgba(60, 38, 12, 0.35));
+}
+@media (max-width: 479.98px) {
+  .item-product__image-ibg-contain img {
+    transform: scale(0.8);
+  }
+}
+
+.cart__wrapper {
+  display: flex;
+  gap: 0 50px;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  max-height: 500px;
+  transition: all 0.5s ease;
+}
+
+.cart {
+  position: relative;
+  max-height: 500px;
+  transition: all 0.5s ease;
+}
+.cart--remove {
+  transform: translateX(-100%);
+  opacity: 0;
+  max-height: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}/*# sourceMappingURL=ProductCardForBasketModal.module.css.map */

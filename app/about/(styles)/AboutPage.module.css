@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+.about-us {
+  opacity: 1;
+}
+
+.about-us__container {
+  position: relative;
+  z-index: 50;
+}
+
+.about-us__body {
+  display: grid;
+  grid-template-columns: 51% 1fr;
+  align-items: center;
+  gap: 0 clamp(1.875rem, -4.539rem + 13.22vw, 8.438rem);
+  margin-bottom: clamp(1.563rem, 0.394rem + 5.84vw, 6.125rem);
+}
+@media (max-width: 991.98px) {
+  .about-us__body {
+    grid-template-columns: auto;
+    row-gap: 60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about-us__image {
+    margin: 0 auto;
+    order: 2;
+  }
+}
+.about-us__image img {
+  padding: clamp(0.5rem, 0.34rem + 0.8vw, 1.125rem);
+  border: 1px solid #9d875c;
+  max-width: 100%;
+}
+
+.about-us__content {
+  max-width: 500px;
+}
+@media (max-width: 991.98px) {
+  .about-us__content {
+    max-width: 85%;
+    margin: 0 auto;
+    order: 1;
+  }
+}
+
+.services-about-us {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  max-width: 1324px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+@media (max-width: 510px) {
+  .services-about-us {
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 40px 0;
+  }
+}
+
+.services-aobut-us__item {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+}
+@media (max-width: 510px) {
+  .services-aobut-us__item {
+    gap: 10px;
+  }
+}
+
+.services-about-us__icon {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 140px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.services-about-us__icon::before {
+  content: "";
+  background: url("/images/icons/bgButton.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+@media (max-width: 510px) {
+  .services-about-us__icon {
+    width: 80px;
+  }
+}
+.services-about-us__icon img {
+  position: relative;
+  max-width: 100%;
+}
+
+.services-about-us__label {
+  font-family: "Italiana", sans-serif;
+  font-size: clamp(0.875rem, 0.715rem + 0.8vw, 1.5rem);
+  text-transform: capitalize;
+  text-align: center;
+  color: #222220;
+}/*# sourceMappingURL=AboutPage.module.css.map */

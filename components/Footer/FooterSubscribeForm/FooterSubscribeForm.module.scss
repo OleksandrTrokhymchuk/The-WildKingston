@@ -1,0 +1,59 @@
+@import "../../../styles/AdditionalStyles/Mixins/mixins.scss";
+
+.footer__subscribe {
+    display: grid;
+    justify-items: end;
+    border-left: 1px solid $backgroundGold;
+    padding-left: clamp(0.938rem, 0.537rem + 2vw, 2.5rem);;
+    @media (max-width: $tablet) {
+        order: 3;
+    }
+    @media (max-width: $mobile) {
+        border-left: none;
+        justify-items: center;
+        order: 2;
+        padding: 0;
+    }
+}
+
+.subscribe__body {
+    max-width: 350px;
+    @media (max-width: $mobile) {
+        max-width: 80%;
+    }
+}
+
+.subscribe__title {
+    color: $goldColor;
+    font-family: $fontFamilySecond;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 1.372rem + 0.64vw, 2rem);
+    text-transform: capitalize;
+    line-height: 1.15;
+    margin-bottom: clamp(0.938rem, 0.777rem + 0.8vw, 1.563rem);
+}
+
+.subscribe__form {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    input, button {
+        background: transparent;
+        color: $goldColor;
+    }
+    input::placeholder {
+        color: $goldColor;
+    }
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(193, 171, 129, 0.2);
+}
+
+.subscribe__button {
+    z-index: 1;
+    transition: opacity 0.5s ease;
+    @media (any-hover: hover) {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

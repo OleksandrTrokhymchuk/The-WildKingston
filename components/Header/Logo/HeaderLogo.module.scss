@@ -1,0 +1,43 @@
+@import "../../../styles/AdditionalStyles/Mixins/mixins.scss";
+
+header[class*="header--scroll"] .header__logo {
+  path { fill: $headerScroll }
+  @media (min-width: $tablet) {
+    transform: scale(0.85);
+  }
+}
+
+.header__logo {
+  width: clamp(6.25rem, 4.378rem + 9.36vw, 13.563rem);
+  height: 78px;
+  z-index: 5;
+  transition: transform 1.1s ease; 
+  path {
+      transition: fill 1.2s ease;
+  }
+  @media (max-width: $tablet) {
+      path {
+          transition: fill 1.2s ease;
+          fill: $backgroundGold;
+      }
+      &--burger {
+          path {
+              fill: white;
+          }
+      }
+  }
+  .header--scroll & {
+      path {
+          fill: $headerScroll;
+      }
+  }
+}
+
+
+
+
+
+
+
+  
+

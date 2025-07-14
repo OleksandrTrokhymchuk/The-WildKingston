@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+.notfoundpage {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(1.25rem, 1.083rem + 0.83vw, 1.875rem) 0;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: black;
+}
+
+.text {
+  color: rgb(91, 91, 91);
+}
+
+.cat-image {
+  max-width: 30%;
+  padding: clamp(0.375rem, 0.275rem + 0.5vw, 0.75rem);
+  border: 1px solid #9d875c;
+}
+@media (max-width: 767.98px) {
+  .cat-image {
+    max-width: 50%;
+  }
+}
+.cat-image--modal {
+  max-width: 60%;
+}
+@media (max-width: 479.98px) {
+  .cat-image--modal {
+    max-width: 80%;
+  }
+}/*# sourceMappingURL=NotFoundPageStyles.module.css.map */

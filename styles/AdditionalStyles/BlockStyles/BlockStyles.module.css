@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+.block-header {
+  display: grid;
+  gap: 20px;
+  justify-items: start;
+}
+.block-header--center {
+  justify-items: center;
+}
+
+.block-header__label {
+  line-height: 1.56;
+  text-transform: capitalize;
+}
+
+.block-header__title {
+  color: #9d875c;
+  font-size: clamp(2.125rem, 1.901rem + 1.12vw, 3rem);
+  text-transform: capitalize;
+  font-family: "Italiana";
+  line-height: 1.15;
+}
+@media (max-width: 991.98px) {
+  .block-header__title--services {
+    color: rgb(122, 101, 61);
+  }
+}
+
+.block-header__text {
+  display: grid;
+  gap: 20px;
+}
+.block-header__text blockquote {
+  font-style: italic;
+}/*# sourceMappingURL=BlockStyles.module.css.map */

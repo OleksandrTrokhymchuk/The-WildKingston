@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+.footer__menu {
+  margin-bottom: clamp(1.25rem, 0.93rem + 1.6vw, 2.5rem);
+}
+
+.menu-footer__title {
+  color: #9d875c;
+  font-family: "Italiana", sans-serif;
+  font-size: 20px;
+}
+.menu-footer__title:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.menu-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px clamp(0.938rem, 0.506rem + 2.16vw, 2.625rem);
+}
+@media (max-width: 767.98px) {
+  .menu-footer__list {
+    justify-content: center;
+    gap: 10px clamp(0.875rem, -1.989rem + 14.32vw, 4.875rem);
+  }
+}
+
+.menu-footer__link {
+  font-weight: 300;
+  line-height: 1.56;
+  display: inline-block;
+  color: #9d875c;
+  position: relative;
+  z-index: 1;
+}
+@media (any-hover: hover) {
+  .menu-footer__link {
+    transition: opacity 0.5s ease;
+  }
+  .menu-footer__link:hover {
+    opacity: 0.7;
+  }
+}/*# sourceMappingURL=FooterMenu.module.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../styles/AdditionalStyles/Mixins/mixins.scss","FooterLogo.module.scss","FooterLogo.module.css"],"names":[],"mappings":"AAAQ,+EAAA;AACA,wFAAA;AACA,6EAAA;ACAR;EACI,oBAAA;EACA,kBAAA;EACA,qDAAA;ACEJ;ADDI;EAJJ;IAKQ,QAAA;IACA,mBAAA;IACA,mBAAA;ECIN;AACF;ADHI;EATJ;IAUQ,mBAAA;IACA,mBAAA;ECMN;AACF","file":"FooterLogo.module.css"}

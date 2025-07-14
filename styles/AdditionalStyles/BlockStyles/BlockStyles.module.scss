@@ -1,0 +1,36 @@
+@import "../Mixins/mixins.scss";
+
+.block-header {
+    display: grid;
+    gap: 20px; 
+    justify-items: start;
+    &--center {
+        justify-items: center;
+    }
+}
+
+.block-header__label {
+    line-height: 1.56;
+    text-transform: capitalize;
+}
+
+.block-header__title {
+    color: $goldColor;
+    font-size: clamp(2.125rem, 1.901rem + 1.12vw, 3rem); 
+    text-transform: capitalize;
+    font-family: "Italiana";
+    line-height: 1.15;
+    &--services {
+        @media (max-width: $tablet) {
+            color: rgb(122, 101, 61)
+        }
+    }
+}
+
+.block-header__text {
+    display: grid;
+    gap: 20px; 
+    blockquote {
+        font-style: italic;
+    }
+}

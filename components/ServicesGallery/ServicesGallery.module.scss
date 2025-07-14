@@ -1,0 +1,90 @@
+@import "../../styles/AdditionalStyles/Mixins/mixins.scss";
+
+.gallery {
+    // padding: clamp(2.5rem, -0.227rem + 13.64vw, 10rem) 0; CORRECT PADDING BEFORE PARALLAX
+    background: #efe9dd;
+}
+  
+
+.gallery__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    row-gap: clamp(1rem, -0.76rem + 8.8vw, 7.875rem);
+    @media (max-width: $mobile) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.gallery__item {
+    @media (min-width: $mobile) {
+        &:nth-child(4n + 1) {
+            width: 75.3%;
+        }
+        &:nth-child(4n) {
+            width: 75.3%;
+            justify-self: end;
+        }
+    }
+    
+    @media (max-width: $mobile) {
+        margin: 0 auto;
+    }
+    
+    @media (any-hover: hover) {
+        &:hover {
+            svg {
+                cursor: pointer;
+                opacity: 0.6;
+            }   
+        }
+    }
+}
+
+.gallery__link {
+    img {
+        margin-bottom: clamp(1.25rem, 0.61rem + 3.2vw, 3.75rem);
+    }
+}
+
+.gallery__img {
+    transition: all 0.5s ease;
+    @media (any-hover: hover) {
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    width: 100%;
+}
+
+.gallery__subtitle {
+    font-family: $fontFamilySecond;
+    font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+    color: #9d875c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        transition: all 1s ease;
+        margin-right: 20px;
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 0.6
+            }
+        }
+    }
+    svg {
+        transition: all 1s ease;
+        @media (max-width: $mobile) {
+            transform: scale(0.8);
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 0.6
+            }
+        }
+    }
+}
+
+

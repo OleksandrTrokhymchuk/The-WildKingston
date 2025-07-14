@@ -1,0 +1,16 @@
+@import "../../../styles/AdditionalStyles/Mixins/mixins.scss";
+
+.footer__logo {
+    justify-self: center;
+    align-self: center;
+    width: clamp(10.625rem, 8.753rem + 9.36vw, 17.938rem);
+    @media (max-width: $tablet) {
+        order: 1;
+        grid-column: span 2;
+        margin-bottom: 20px;
+    }
+    @media (max-width: $mobile) {
+        grid-column: span 1;
+        margin-bottom: 10px;
+    }
+}

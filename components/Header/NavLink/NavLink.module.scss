@@ -1,0 +1,20 @@
+@import "../../../styles/AdditionalStyles/Mixins/mixins.scss";
+
+.menu__link {
+    color: $backgroundGold;
+    line-height: 1.52;
+    display: inline-block;
+    transition: all 1.2s ease;
+    @media (max-width: $tablet) {
+        color: white;
+        font-size: clamp(1.563rem, 1.115rem + 2.24vw, 2.188rem);
+    }
+    @media (any-hover: hover) {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .header--scroll & {
+        color: $headerScroll;
+    }
+}

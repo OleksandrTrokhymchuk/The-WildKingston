@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px clamp(1.25rem, 0.93rem + 1.6vw, 2.5rem);
+}
+@media (max-width: 767.98px) {
+  .footer__social {
+    justify-content: space-between;
+  }
+}
+
+.social__item {
+  position: relative;
+  z-index: 1;
+}
+@media (any-hover: hover) {
+  .social__item {
+    transition: opacity 0.5s ease;
+  }
+  .social__item:hover {
+    opacity: 0.6;
+  }
+}/*# sourceMappingURL=FooterSocialLinks.module.css.map */

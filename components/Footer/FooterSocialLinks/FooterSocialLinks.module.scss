@@ -1,0 +1,21 @@
+@import "../../../styles/AdditionalStyles/Mixins/mixins.scss";
+
+.footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px clamp(1.25rem, 0.93rem + 1.6vw, 2.5rem);
+    @media (max-width: $mobile) {
+         justify-content: space-between;
+    }
+ }
+ 
+.social__item {
+    position: relative;
+    z-index: 1;
+    @media (any-hover: hover) {
+        transition: opacity 0.5s ease; 
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+ }

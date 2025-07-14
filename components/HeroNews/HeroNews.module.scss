@@ -1,0 +1,40 @@
+@import "../../styles/AdditionalStyles/Mixins/mixins.scss";
+
+.news__header {
+    margin-bottom: 30px;
+}
+
+.swiper {
+    padding: 0 20px;
+    max-height: 500px;
+}
+
+.news__slide {
+    &--link {
+        color: $goldColor;
+        display: block;
+        margin-bottom: 15px;
+        transition: opacity 0.5s ease;
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 0.8
+            }
+        }
+    }
+    p {
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+    img {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $backgroundGold;
+        transform: scale(1);
+        transition: transform 0.4s ease;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+}

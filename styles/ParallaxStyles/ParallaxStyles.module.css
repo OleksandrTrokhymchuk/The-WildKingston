@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+.parallax-item {
+  position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  padding: 50px 0;
+  max-width: 1572px;
+  margin: clamp(40px, 5vw, 60px) clamp(10px, 4vw, 20px);
+}
+@media (min-width: 1572px) {
+  .parallax-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.parallax-item--top {
+  margin-top: clamp(120px, 12vw, 180px);
+  margin-bottom: clamp(40px, 6vw, 60px);
+}
+.parallax-item--services {
+  position: relative;
+  background-color: #222220;
+}
+.parallax-item--services::after {
+  content: "";
+  background: url("../../../images/footer-decor-left.svg") left bottom/100% no-repeat;
+  position: absolute;
+  width: 175px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+@media (max-width: 767.98px) {
+  .parallax-item--services::after {
+    opacity: 0.5;
+  }
+}
+.parallax-item--services::before {
+  content: "";
+  width: 41%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #c1ab81;
+  position: absolute;
+}
+.parallax-item--about {
+  position: relative;
+}
+.parallax-item--about::before {
+  content: "";
+  position: absolute;
+  background: url("/images/about-us/bg.png") no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  transform: rotate(180deg) scaleX(-1);
+}/*# sourceMappingURL=ParallaxStyles.module.css.map */

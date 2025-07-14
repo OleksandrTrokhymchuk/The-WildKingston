@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+header[class*=header--scroll] .header__logo path {
+  fill: rgb(255, 226, 172);
+}
+@media (min-width: 991.98px) {
+  header[class*=header--scroll] .header__logo {
+    transform: scale(0.85);
+  }
+}
+
+.header__logo {
+  width: clamp(6.25rem, 4.378rem + 9.36vw, 13.563rem);
+  height: 78px;
+  z-index: 5;
+  transition: transform 1.1s ease;
+}
+.header__logo path {
+  transition: fill 1.2s ease;
+}
+@media (max-width: 991.98px) {
+  .header__logo path {
+    transition: fill 1.2s ease;
+    fill: #c1ab81;
+  }
+  .header__logo--burger path {
+    fill: white;
+  }
+}
+.header--scroll .header__logo path {
+  fill: rgb(255, 226, 172);
+}/*# sourceMappingURL=HeaderLogo.module.css.map */

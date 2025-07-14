@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+@media (max-width: 991.98px) {
+  .hero {
+    align-items: start;
+  }
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+  padding-top: clamp(4.375rem, 3.063rem + 6.56vw, 9.5rem) !important;
+  padding-bottom: 50px !important;
+}
+@media (max-width: 991.98px) {
+  .hero__container {
+    justify-content: center;
+  }
+}
+
+.hero__content {
+  max-width: clamp(31.25rem, 14.254rem + 26.56vw, 40.313rem);
+  position: absolute;
+  z-index: 2;
+}
+@media (max-width: 991.98px) {
+  .hero__content {
+    top: 17%;
+    text-align: center;
+    max-width: 85%;
+  }
+}
+
+.hero__title {
+  font-family: "Italiana", sans-serif;
+  font-size: clamp(2.5rem, 1.54rem + 4.8vw, 6.25rem);
+  text-transform: capitalize;
+  color: #c1ab81;
+}
+.hero__title:not(:last-child) {
+  margin-bottom: clamp(1.25rem, 0.738rem + 2.56vw, 3.25rem);
+}
+
+.hero__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}/*# sourceMappingURL=HeroStyles.module.css.map */

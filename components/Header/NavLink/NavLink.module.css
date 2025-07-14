@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+.menu__link {
+  color: #c1ab81;
+  line-height: 1.52;
+  display: inline-block;
+  transition: all 1.2s ease;
+}
+@media (max-width: 991.98px) {
+  .menu__link {
+    color: white;
+    font-size: clamp(1.563rem, 1.115rem + 2.24vw, 2.188rem);
+  }
+}
+@media (any-hover: hover) {
+  .menu__link:hover {
+    opacity: 0.7;
+  }
+}
+.header--scroll .menu__link {
+  color: rgb(255, 226, 172);
+}/*# sourceMappingURL=NavLink.module.css.map */

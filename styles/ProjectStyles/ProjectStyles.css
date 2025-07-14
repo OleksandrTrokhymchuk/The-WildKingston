@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import "../AdditionalStyles/ResetStyles/ResetStyles.css";
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #222220;
+  background-color: #efe9dd;
+  overflow-x: hidden !important;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  margin-top: clamp(6.313rem, 3.076rem + 6.55vw, 9.5rem);
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #9b8573;
+  border-radius: 10px;
+}
+
+[class*=__container] {
+  max-width: 1572px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+[class*=-ibg-contain] img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main {
+  flex: 1;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=ProjectStyles.css.map */
