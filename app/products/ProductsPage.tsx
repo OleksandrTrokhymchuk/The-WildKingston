@@ -217,8 +217,9 @@ useEffect(() => {
             <h2 className={blockStyles["block-header__title"]}>For all your pet needs</h2>
             <div className={blockStyles["block-header__text"]}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi
-                id augue ultrices, in tempus elit.
+                Discover a wide range of high-quality products for your beloved pets. 
+                From nutritious food to cozy beds and fun toys, find everything you need to keep your furry, 
+                feathered, or scaled friends happy and healthy.
               </p>
             </div>
           </div>
